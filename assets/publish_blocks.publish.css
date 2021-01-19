@@ -22,3 +22,7 @@
 .block-group-wrapper:not(:last-of-type) {
 	margin-bottom: 50px;
 }
+
+.block-group-wrapper .column.primary:only-child {
+	width: 100%;
+}
