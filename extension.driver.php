@@ -35,8 +35,8 @@
 
 			// only proceed on New or Edit publish pages
 			if ($page instanceof contentPublish and in_array($context['page'], array('new', 'edit'))) {
-				$page->addStylesheetToHead(URL . '/extensions/publish_blocks/assets/publish_blocks.publish.css', 'screen', 9001);
-				$page->addScriptToHead(URL . '/extensions/publish_blocks/assets/publish_blocks.publish.js', 9002);
+				$page->addStylesheetToHead(URL . '/extensions/publish_blocks/assets/publish_blocks.publish.css', 'screen', 10001);
+				$page->addScriptToHead(URL . '/extensions/publish_blocks/assets/publish_blocks.publish.js', 10002);
 
 				include_once(TOOLKIT . '/class.sectionmanager.php');
 
