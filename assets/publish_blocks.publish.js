@@ -41,7 +41,10 @@
 			self.addClass('primary column');
 			// Update secondary classes and append to this fieldset
 			if (secondary.length) secondary.addClass('secondary column').appendTo(fieldset);
-		})
+		});
+
+		// If used with the Publish Tabs extension, remove the styling from the first block as it conflicts with tabs
+		if ($('#context > .tabs').length) $('.tab-group > .block-group-wrapper:first-child').addClass('-no-border');
 	});
 
 })(jQuery);
